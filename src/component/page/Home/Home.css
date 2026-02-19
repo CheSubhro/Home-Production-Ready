@@ -1,0 +1,425 @@
+
+/* src/pages/Home/Home.css */
+
+.hero-section {
+    width: 100%;
+    height: 85vh; /* Screen-er praye purota nibe */
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), 
+                url('https://images.unsplash.com/photo-1552346154-21d32810aba3?q=80&w=2070&auto=format&fit=crop'); 
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    color: white;
+  }
+  
+  .hero-content {
+    max-width: 600px;
+  }
+  
+  .hero-subtitle {
+    color: #ff4e00; /* Bacca Bucci orange */
+    font-weight: 700 !important;
+    letter-spacing: 3px !important;
+  }
+  
+  .hero-title {
+    font-size: 4.5rem !important;
+    font-weight: 900 !important;
+    line-height: 1.1 !important;
+    margin: 15px 0 !important;
+  }
+  
+  .hero-title span {
+    -webkit-text-stroke: 1px white;
+    color: transparent;
+  }
+  
+  .hero-description {
+    font-size: 1.1rem;
+    margin-bottom: 30px !important;
+    opacity: 0.9;
+  }
+  
+  .hero-btn {
+    background-color: #ff4e00 !important;
+    color: white !important;
+    padding: 12px 40px !important;
+    font-weight: 700 !important;
+    border-radius: 0 !important;
+    transition: 0.3s !important;
+  }
+  
+  .hero-btn:hover {
+    background-color: #000 !important;
+    transform: scale(1.05);
+  }
+  
+  /* Mobile responsive */
+  @media (max-width: 600px) {
+    .hero-title {
+      font-size: 2.5rem !important;
+    }
+    .hero-section {
+      height: 70vh;
+    }
+  }
+
+  /* Home.css - Slider Styles */
+
+.hero-slider-wrapper {
+    width: 100%;
+    height: 85vh;
+  }
+  
+  .hero-slide {
+    height: 85vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Swiper Navigation Customization */
+  .swiper-button-next, .swiper-button-prev {
+    color: #fff !important;
+    background: rgba(0,0,0,0.2);
+    width: 50px !important;
+    height: 50px !important;
+    border-radius: 50%;
+    transition: 0.3s;
+  }
+  
+  .swiper-button-next:after, .swiper-button-prev:after {
+    font-size: 20px !important;
+    font-weight: bold;
+  }
+  
+  .swiper-button-next:hover, .swiper-button-prev:hover {
+    background: #ff4e00;
+  }
+  
+  .swiper-pagination-bullet-active {
+    background: #ff4e00 !important;
+    width: 30px !important;
+    border-radius: 5px !important;
+  }
+  
+  /* Animations for Text inside Slide */
+  .swiper-slide-active .hero-title {
+    animation: fadeInUp 0.8s ease-out forwards;
+  }
+  
+  .swiper-slide-active .hero-subtitle {
+    animation: fadeInUp 0.5s ease-out forwards;
+  }
+  
+  @keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+
+
+.product-image-wrapper {
+  position: relative;
+  width: 100%;
+  height: 250px; /* Fixed height for all images */
+  background-color: #f9f9f9; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+
+
+.product-card:hover .product-image {
+  transform: scale(1.1);
+}
+
+.product-hover-actions {
+  position: absolute;
+  bottom: -50px; /* Hidden by default */
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding: 15px;
+  transition: 0.3s ease;
+  background: rgba(255,255,255,0.8);
+}
+
+.product-card:hover .product-hover-actions {
+  bottom: 0;
+}
+
+.action-btn {
+  background: white !important;
+  color: black !important;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.action-btn.primary:hover {
+  background: #ff4e00 !important;
+  color: white !important;
+}
+
+
+.product-name {
+  font-weight: 700 !important;
+  font-size: 1.1rem !important;
+  margin-bottom: 8px !important;
+}
+
+.product-price-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  align-items: center;
+}
+
+.current-price {
+  color: #ff4e00;
+  font-weight: 800;
+  font-size: 1.2rem;
+}
+
+.old-price {
+  text-decoration: line-through;
+  color: #888;
+  font-size: 0.9rem;
+}
+
+.discount-tag {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 2;
+}
+
+
+
+.product-info {
+  flex-grow: 1;
+  padding-top: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.home-container {
+  background-color: #f4f4f4; 
+  color: #000000;
+  
+}
+
+/* Section Title Styling */
+.section-title {
+  font-weight: 800 !important;
+  text-align: center;
+  margin-bottom: 50px !important;
+  letter-spacing: 2px;
+  position: relative;
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 3px;
+  background-color: #ff4e00;
+}
+
+/* Card Styling Update */
+.product-card {
+  width: 100%;
+  height: 100%; 
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  border-radius: 15px;
+  padding: 15px; /* Spacing inside card */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+
+.product-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.12);
+}
+
+
+.product-image {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: contain; 
+  padding: 20px; 
+  transition: transform 0.5s ease;
+}
+
+/* Hover Action Buttons logic */
+.product-hover-actions {
+  display: flex;
+  gap: 10px;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%) translateY(50px); /* Initially hidden */
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+  z-index: 5;
+}
+
+.product-card:hover .product-hover-actions {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
+
+.action-btn {
+  background: #000 !important;
+  color: #fff !important;
+}
+
+.action-btn:hover {
+  background: #ff4e00 !important;
+}
+
+/* Custom Flex Grid */
+.custom-product-grid {
+  display: flex;
+  flex-wrap: wrap; /* Line break korar jonno */
+  gap: 20px; /* Product er majhe faka jaiga */
+  justify-content: flex-start;
+}
+
+.grid-item {
+  /* (100% / 3 items) - gap spacing */
+  flex: 0 0 calc(33.33% - 14px); 
+  display: flex;
+}
+
+/* Mobile er jonno ek line-e 1-ta ba 2-to */
+@media (max-width: 900px) {
+  .grid-item {
+      flex: 0 0 calc(50% - 10px); /* Tablet e 2-to */
+  }
+}
+
+@media (max-width: 600px) {
+  .grid-item {
+      flex: 0 0 100%; /* Mobile e 1-ta */
+  }
+}
+
+/* Card er width jate boro na hoye jay */
+.product-card {
+  width: 100%; /* Container er purota nibe */
+  background: #fff;
+  border-radius: 15px;
+  padding: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  display: flex;
+  flex-direction: column;
+}
+
+/* Category Grid Layout */
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 300px);
+  gap: 20px;
+  height: 620px;
+}
+
+.category-box {
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  border-radius: 15px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+
+.category-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.3); /* Dark tint jate text bojha jay */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+}
+
+.category-box:hover .category-overlay {
+  background: rgba(0,0,0,0.5);
+}
+
+.category-text {
+  color: white;
+  font-weight: 900 !important;
+  letter-spacing: 5px;
+  margin-bottom: 15px !important;
+}
+
+.category-btn {
+  padding: 10px 25px;
+  background: white;
+  border: none;
+  font-weight: 700;
+  cursor: pointer;
+  transform: translateY(20px);
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.category-box:hover .category-btn {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/* Mobile Responsive */
+@media (max-width: 900px) {
+  .category-grid {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+  .category-box {
+    height: 250px;
+  }
+}
+
+.featured-swiper {
+  padding: 40px 10px !important;
+}
+
+/* Swiper navigation buttons styling */
+.featured-swiper .swiper-button-next, 
+.featured-swiper .swiper-button-prev {
+  background: #000;
+  color: #fff !important;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.featured-swiper .swiper-button-next:after, 
+.featured-swiper .swiper-button-prev:after {
+  font-size: 18px !important;
+}

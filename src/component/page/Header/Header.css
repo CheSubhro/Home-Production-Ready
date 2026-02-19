@@ -1,0 +1,298 @@
+
+.main-appbar {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+    transition: all 0.3s ease-in-out !important; /* Smooth transition */
+    height: 80px; /* Default height */
+    justify-content: center;
+  }
+
+  .main-appbar.shrunk {
+    height: 60px; /* Small height */
+    background-color: rgba(255, 255, 255, 0.95) !important; /*  transparent white */
+    backdrop-filter: blur(8px); /* Modern blurry effect */
+  }
+  
+  
+
+  .main-appbar.shrunk .logo-text {
+    font-size: 1.1rem !important;
+    transition: 0.3s;
+  }
+  
+  .logo-text {
+    font-weight: 900 !important;
+    letter-spacing: 2px;
+    cursor: pointer;
+    flex-grow: 0;
+   min-width: 150px;
+  }
+
+  .MuiDrawer-paper {
+    background-color: #fff;
+    padding-top: 20px;
+  }
+  
+  .nav-container {
+    display: flex;
+    gap: 30px;
+  }
+  
+  .nav-link {
+    font-size: 14px !important;
+    font-weight: 600 !important;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-link:hover {
+    color: #ff4e00; /* Logo orange touch */
+  }
+  
+  .actions-container {
+    display: flex;
+    gap: 10px;
+    flex-grow: 0;
+    min-width: 150px; /* Icons-er jonno space */
+    justify-content: flex-end;
+  }
+  
+  /* Mobile responsive */
+  @media (max-width: 600px) {
+    .search-wrapper.active {
+      position: absolute;
+      left: 10px;
+      right: 10px;
+      width: calc(100% - 20px);
+      z-index: 99;
+      background: white;
+      border: 1px solid #eee;
+    }
+  }
+
+  /* Mobile responsive */
+@media (max-width: 600px) {
+    .trending-dropdown {
+      width: calc(100vw - 40px);
+      right: -10px;
+      left: auto;
+    }
+  }
+
+  .search-wrapper {
+    display: flex;
+    align-items: center;
+    /* Icon-ke expand hobar dik (right) theke handle korar jonno row-reverse */
+    flex-direction: row-reverse; 
+    background: transparent;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    border-radius: 50px; /* Rounded look */
+    padding: 2px;
+    width: 40px; /* Default shudhu icon-er moto */
+    border: 1px solid transparent;
+  }
+
+  .search-wrapper.active {
+    background: #f8f8f8;
+    width: 280px; /* Boro screen-e joto ta expand korte chan */
+    border: 1px solid #ddd;
+    padding: 2px 10px;
+  }
+
+  .search-input {
+    width: 0;
+    opacity: 0;
+    transition: all 0.3s ease;
+    font-size: 14px;
+  }
+
+  .search-wrapper.active .search-input {
+    width: 100%;
+    opacity: 1;
+  }
+
+  .search-icon-btn {
+    padding: 8px !important;
+    color: #333;
+  }
+
+  /* .search-outer-container {
+    position: absolute; 
+    z-index: 10;
+  } */
+
+  /* .search-wrapper.active{
+    width: 400px; 
+    background: #f1f1f1;
+
+  } */
+
+  .trending-dropdown {
+    position: absolute;
+    top: 55px;
+    right: 0;
+    width: 280px;
+    background: white !important;
+    border-radius: 12px !important;
+    padding: 10px 0;
+    z-index: 1000;
+    border: 1px solid #eee;
+    animation: slideIn 0.3s ease;
+  }
+  
+  .trending-title {
+    padding: 10px 20px;
+    color: #888;
+    font-size: 11px !important;
+    font-weight: 700 !important;
+    display: flex;
+    align-items: center;
+  }
+  
+  .trending-item {
+    padding: 5px 20px !important;
+    transition: 0.2s;
+  }
+  
+  .trending-item:hover {
+    background-color: #f9f9f9 !important;
+    color: #ff4e00; /* Bacca Bucci Orange */
+  }
+  
+  @keyframes slideIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .auth-btn {
+    background-color: #000 !important;
+    color: #fff !important;
+    padding: 12px !important;
+    font-weight: 600 !important;
+    border-radius: 0 !important; /* Sharp look like Bacca Bucci */
+  }
+  
+  .auth-btn:hover {
+    background-color: #333 !important;
+  }
+  
+  .auth-toggle {
+    color: #ff4e00; /* Brand color */
+    cursor: pointer;
+    font-weight: 600;
+    text-decoration: underline;
+  }
+  
+  .MuiDialog-paper {
+    border-radius: 0px !important; /* Premium boxy look */
+  }
+
+  
+  /* 1. Main AppBar Styling */
+.main-appbar {
+    background-color: #ffffff !important; /* Force white background */
+    color: #000000 !important;
+    transition: all 0.3s ease-in-out !important;
+    min-height: 70px; 
+    display: flex !important; 
+    justify-content: center;
+    z-index: 1100 !important; 
+  }
+  
+  /*  after Scroll (shrunk class) */
+  .main-appbar.shrunk {
+    min-height: 60px !important; 
+    background-color: rgba(255, 255, 255, 0.98) !important;
+    box-shadow: 0px 2px 10px rgba(0,0,0,0.1) !important; 
+  }
+  
+  /*  Toolbar height handle  */
+  .header-toolbar {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    width: 100%;
+  }
+
+  .header-section.left {
+    justify-content: flex-start;
+}
+
+.header-section.center {
+    justify-content: center;
+    position: relative;
+}
+
+.header-section.right {
+    justify-content: flex-end;
+}
+  
+  .shrunk .header-toolbar {
+    min-height: 60px !important;
+  }
+  
+  /*  Navigation Links */
+  .nav-container {
+    display: flex;
+    gap: 25px;
+    flex-grow: 1; 
+    justify-content: center;
+  }
+  
+  .actions-container {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  /* Announcement Bar Center Alignment */
+.announcement-bar {
+    background-color: #000000;
+    color: #ffffff;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center horizontally */
+    text-align: center;
+    width: 100%;
+}
+
+/* Header.css */
+
+.nav-item-wrapper {
+    position: relative; /* Dropdown positioning-er jonno */
+    padding: 20px 0; /* Hover area baranor jonno */
+  }
+  
+  .dropdown-menu {
+    position: absolute;
+    top: 100%; /* Nav link-er thik niche */
+    left: 50%;
+    transform: translateX(-50%) translateY(10px);
+    background-color: #ffffff;
+    min-width: 200px;
+    box-shadow: 0px 8px 20px rgba(0,0,0,0.1);
+    border-radius: 4px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    z-index: 1200;
+    border-top: 3px solid #000; /* Bacca Bucci style accent */
+  }
+  
+  /* Hover korle menu dekhabe */
+  .nav-item-wrapper:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-50%) translateY(0);
+  }
+  
+  .dropdown-item {
+    padding: 10px 20px !important;
+  }
+  
+  .dropdown-item:hover {
+    background-color: #f5f5f5 !important;
+    color: #ff4e00;
+  }
+
