@@ -43,7 +43,7 @@ Installation Steps
 Clone the repository:
 
 Bash
-git clone https://github.com/CheSubhro/your-repo-name.git
+https://github.com/CheSubhro/Home-Production-Ready.git
 cd your-repo-name
 Install dependencies:
 
