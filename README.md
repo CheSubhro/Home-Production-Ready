@@ -1,16 +1,58 @@
-# React + Vite
+🛒 E-Commerce Frontend - Home & Login Page
+A modern, highly responsive E-Commerce frontend template built using React 19 and Vite. This project focuses on a premium user interface design, featuring a fully functional Home Page and a sleek Login Page, integrated with interactive maps and fluid sliders.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+🛠️ Tech Stack
+Framework: React 19 (Using Vite for fast bundling and development)
 
-Currently, two official plugins are available:
+UI Components: Material UI (MUI v7) & Emotion for styled components.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Navigation & Routing: React Router DOM v7.
 
-## React Compiler
+Sliders/Carousels: Swiper.js (Used for product banners, feature sliders).
 
-The React Compiler is currently not compatible with SWC. See [this issue](https://github.com/vitejs/vite-plugin-react/issues/428) for tracking the progress.
+Maps Integration: React Leaflet & Leaflet (Ideal for store location or delivery tracking views).
 
-## Expanding the ESLint configuration
+Linting: ESLint for maintaining code quality.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+<img width="915" height="641" alt="localhost_5173_ (21)" src="https://github.com/user-attachments/assets/87012823-7aac-4aa4-b284-20fb68478a5a" />
+<img width="915" height="641" alt="localhost_5173_ (22)" src="https://github.com/user-attachments/assets/33fa7f80-0645-444a-afbe-e4912eb52b5f" />
+
+
+✨ Key Features Developed
+E-Commerce Home Page: A visually appealing landing page complete with modern navigation, hero banners, product sections, and a detailed footer structure.
+
+Interactive Sliders: Smooth product and banner transitions powered by Swiper.
+
+Integrated Maps: Fully interactive maps using Leaflet to display physical store locations or contact sections.
+
+Secure-look Login Page: A clean and professional user authentication layout built with Material UI components.
+
+Responsive Layout: Fully optimized for mobile, tablet, and desktop screens using MUI's advanced layout system.
+
+🚀 Getting Started
+Follow these instructions to set up and run the project locally.
+
+Prerequisites
+Make sure you have Node.js installed on your system.
+
+Installation Steps
+Clone the repository:
+
+Bash
+git clone https://github.com/CheSubhro/your-repo-name.git
+cd your-repo-name
+Install dependencies:
+
+Bash
+npm install
+Start the development server:
+
+Bash
+npm run dev
+Open the application:
+Open your browser and navigate to http://localhost:5173 (or the port specified in your terminal).
+
+📝 License
+This project is intended for personal portfolio and educational use.
+
+Developed with ❤️ by Chesubhro
