@@ -13,6 +13,8 @@ Sliders/Carousels: Swiper.js (Used for product banners, feature sliders).
 Maps Integration: React Leaflet & Leaflet (Ideal for store location or delivery tracking views).
 
 Linting: ESLint for maintaining code quality.
+
+
 <img width="1366" height="9063" alt="screencapture-localhost-5173-2026-05-25-16_27_45" src="https://github.com/user-attachments/assets/e643006c-e52c-4af7-852c-6c0d540bbcd9" />
 
 <img width="915" height="641" alt="localhost_5173_ (22)" src="https://github.com/user-attachments/assets/33fa7f80-0645-444a-afbe-e4912eb52b5f" />
