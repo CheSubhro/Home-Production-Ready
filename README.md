@@ -1,7 +1,9 @@
-🛒 E-Commerce Frontend - Home & Login Page
+# 🛒 E-Commerce Frontend - Home & Login Page
+
 A modern, highly responsive E-Commerce frontend template built using React 19 and Vite. This project focuses on a premium user interface design, featuring a fully functional Home Page and a sleek Login Page, integrated with interactive maps and fluid sliders.
 
-🛠️ Tech Stack
+# 🛠️ Tech Stack
+
 Framework: React 19 (Using Vite for fast bundling and development)
 
 UI Components: Material UI (MUI v7) & Emotion for styled components.
